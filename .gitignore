@@ -59,3 +59,5 @@ dkms.conf
 */*.xpr
 */*.sim
 */*.ip_user_files
+*/*.ip_user_files
+/final_project/final_project.srcs/utils_1/*
