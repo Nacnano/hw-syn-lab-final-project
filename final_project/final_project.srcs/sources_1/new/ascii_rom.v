@@ -4,7 +4,7 @@ module ascii_rom(
         output reg [7:0] data
     );
 
-    (* rom_style = "block" *) // Infer BRAM
+    (* rom_style = "block" *) 
 
     reg [10:0] addr_reg;
     

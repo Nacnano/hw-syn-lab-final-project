@@ -1,28 +1,6 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/31/2021 09:36:46 PM
-// Design Name: 
-// Module Name: vga_sync
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-// from https://embeddedthoughts.com/2016/07/29/driving-a-vga-monitor-using-an-fpga/
-// there are vga_sync and vga
-// modify something in vga
-
+// https://embeddedthoughts.com/2016/07/29/driving-a-vga-monitor-using-an-fpga/
 module vga_sync(
     input wire clk, reset,
     output wire hsync, vsync, video_on, p_tick,
