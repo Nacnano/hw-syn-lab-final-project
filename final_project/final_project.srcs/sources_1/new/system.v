@@ -1,9 +1,9 @@
 module system(
-    output wire RsTx, //uart
-    input wire RsRx, //uart
-    input clk, //both
-    output wire Hsync, Vsync, //vga
-    output wire [3:0] vgaRed, vgaGreen, vgaBlue, //vga
+    output wire RsTx, // UART Transmit
+    input wire RsRx, // UART Receive
+    input clk,
+    output wire Hsync, Vsync, // VGA Sync
+    output wire [3:0] vgaRed, vgaGreen, vgaBlue, // VGA Colors
     output [6:0] seg,
     output dp,
     output [3:0] an

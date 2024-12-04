@@ -4,8 +4,7 @@ module uart(
     input clk,
     input rx,
     input [7:0] data_transmit,
-//    input sent,
-    input dte, // data_transmit_enable
+    input dte,
     output tx,
     output [7:0] data_received,
     output received
@@ -22,7 +21,7 @@ module uart(
     
     always @(posedge baud) begin
         if (en) en = 0;
-        if ((~last_rec & received) || dte) begin // if received or pass enable
+        if ((~last_rec & received) || dte) begin
             en = 1;
         end
         last_rec = received;
